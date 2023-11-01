@@ -1,0 +1,13 @@
+.Container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 20px;
+    text-shadow: 5px black;
+}

@@ -1,8 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import {io} from "socket.io-client"
+import './FuncSocket.css';
 function FuncSocket() {
     const[text,setText]=useState("")
     let socket=io("http://localhost:8000/")
+    
+      
+    
     useEffect(()=>{
     socket.on("client",(data)=>{
             console.log(data)
@@ -42,7 +46,7 @@ function FuncSocket() {
      }
 
     return (
-        <div>
+        <div className="Container">
 socket client side
         <button onClick={handlemessage}>send message</button>
         <button onClick={handlebrdcstmessage}>send message to all</button>
